@@ -1,0 +1,93 @@
+:root {
+    --cor-creme: hsl(30, 38%, 92%);
+    --cor-branco: #FFFFFF;
+    --fonte-principal: "Montserrat";
+    --fonte-secundaria: "Fraunces";
+    --cor-cinza: rgb(121, 115, 115);
+    --cor-verde: hsl(156, 85%, 24%);
+}
+
+body {
+    background: var(--cor-creme);
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+
+main {
+    background: var(--cor-branco);
+    border-radius: 0.75em;
+    width: 90%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: start;
+}
+
+.imagem-principal {
+    width: 100%;
+    border-radius: 0.75em 0.75em 0 0;
+}
+
+.titulo-principal,
+.texto-descriçao,
+.botao {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 1.25em;
+    margin-left: 1.9em;
+    color: var(--cor-cinza);
+}
+
+.titulo-nome {
+    font-family: var(--fonte-secundaria);
+    font-size: 28px;
+    margin: 0.5em 0.8em;
+    font-weight: 700;
+}
+
+.titulo-principal {
+    text-transform: uppercase;
+    
+}
+
+.texto-descriçao {
+    line-height: 1.7em;
+    margin-right: 1.4em;
+}
+
+.preço {
+    display: inline-block;
+    margin-top: 0.75em;
+}
+
+.preço-principal {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cor-verde);
+    margin-left: 1em;
+    font-family: var(--fonte-secundaria);
+}
+
+.preço-secundario {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 1.9em;
+    color: var(--cor-cinza);
+    font-family: var(--fonte-principal);
+    text-decoration: line-through;
+}
+
+.botao {
+    background: var(--cor-verde);
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    width: 85%;
+    padding: 0.75em;
+    margin: 1em 0 2em 1.8em;
+    background-image: url(images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
